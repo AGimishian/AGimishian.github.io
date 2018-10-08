@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <header>
+    <header class="container">
        <div class="logo">
-           <a href="" class="logo_link">A-CLASS</a>
+           <a href="#" class="logo_link">A-CLASS</a>
        </div>
         <nav>
             <ul>
@@ -19,12 +20,34 @@
             </ul>
         </nav>
         
-        <h1>How much will my interior design cost?</h1>
+        <h1>How much is your house worth?</h1>
         <p class="hero_paragraph">Leave us your email to find out!</p>
         
         <input type="text" class="hero_input">
-        <button class="hero_btn">Submit</button>
-        
+        <button class="hero_btn">Submit</button>       
     </header>
+    
+    <main class="container">
+        <section class="identify">
+            <h5>A-CLASS is here to help wether you are <br> buying or selling a house</h5>
+            
+            <div class="card card_buyer">
+                <img src="house.svg" alt="" class="card_img">
+                <div class="card_text">
+                    <h4>I'm a Buyer</h4>
+                    <p class="card_par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure veniam quia.</p>
+                    <a href="" class="card_link">Buy a house</a>
+                </div>
+            </div>
+            <div class="card card_seller">
+                <img src="mortgage.svg" alt="" class="card_img">
+                <div class="card_text">
+                    <h4>I'm a Seller</h4>
+                    <p class="card_par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure veniam quia.</p>
+                    <a href="" class="card_link">Sell my house</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
