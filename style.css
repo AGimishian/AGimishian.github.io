@@ -6,10 +6,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;  
 }
 
+main {
+    display: flex;
+    flex-flow: column;
+    background-color: whitesmoke;
+}
 
 
 /* --------------
@@ -62,18 +66,6 @@ nav li a {
 }
 
 
-
-/* --------------
-      MAIN 
--------------- */ 
-
-
-
-main {
-    display: flex;
-    flex-flow: column;
-}
-
 .hero {
     text-align: center;
 }
@@ -115,16 +107,12 @@ h1 {
       MAIN 
 -------------- */ 
 
-
-
-main {
-    background-color: gainsboro;
-    display: flex;
-    flex-flow: column;
+section {
+    margin: 1.5em auto;
 }
 
 h5 {
-    margin: 2em auto 3em auto;
+    margin: 0 auto 3em auto;
 }
 
 .card {
@@ -138,17 +126,16 @@ h5 {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 } 
 
-
 .card_img {
     max-width: 80px;
-    margin: 2em 5em 1em;    
+    margin: 3em 5em 1em;    
 }
 
 .card_text {
     padding: 1em 2em 2em;
 }
 
-p {
+.card_par {
     color: dimgrey;  
     margin: 1em;
     font-size: 0.75em;
@@ -167,22 +154,43 @@ p {
 
 
 /* ---------------------
+         FOOTER 
+--------------------- */
+
+footer {
+    background-color: darkgrey;
+    align-content: center;
+    padding: 2em ;
+}
+
+.footer_h {
+    font-size: 0.75em;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    
+    
+}
+
+
+
+/* ---------------------
       MEDIA QUERIES 
 --------------------- */ 
 
 @media screen and (min-width: 820px){
 
-.container {
-    flex-flow: row;
-}
+    .section {
+        flex-flow: row;
+    }
 
-.identify {
-    margin: 0.5em auto;   
-}    
-    
-.card {
-    margin: 1em;
-    display: inline-block;
-}
+    .identify {
+        margin: 0.5em auto;   
+    }    
+
+    .card {
+        margin: 1em;
+        display: inline-block;
+    }
     
 }
